@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>HTML基础 | leetal</title>
+  <title>JS基础 | leetal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="初识HTML Hyper Text Markup Language,超文本标记语言,负责描述文档语义的语言,也就是web标准中的结构标准   超文本: 图片、音频、视频、动画、多媒体等内容超出了文本的限制 超级链接文本，与其他主机的文件进行连接   标记语言: HTML的语法规范是一套标记标签,HTML标签的描述使得网页元素可以被浏览器解析呈现 HTML没有编译过程而是由浏览器直接解析,不属于编程">
+  <meta name="description" content="JS引入方式与基本语法引入方式 行内式(不建议)1234567891011&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;    &lt;head&gt;        &lt;meta charset&#x3D;&quot;UTF-8&quot; &#x2F;&gt;        &lt;meta name&#x3D;&quot;viewport&quot; con">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML基础">
-<meta property="og:url" content="http://example.com/2023/03/08/HTML/index.html">
+<meta property="og:title" content="JS基础">
+<meta property="og:url" content="http://example.com/2023/03/10/JS/index.html">
 <meta property="og:site_name" content="leetal">
-<meta property="og:description" content="初识HTML Hyper Text Markup Language,超文本标记语言,负责描述文档语义的语言,也就是web标准中的结构标准   超文本: 图片、音频、视频、动画、多媒体等内容超出了文本的限制 超级链接文本，与其他主机的文件进行连接   标记语言: HTML的语法规范是一套标记标签,HTML标签的描述使得网页元素可以被浏览器解析呈现 HTML没有编译过程而是由浏览器直接解析,不属于编程">
+<meta property="og:description" content="JS引入方式与基本语法引入方式 行内式(不建议)1234567891011&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;    &lt;head&gt;        &lt;meta charset&#x3D;&quot;UTF-8&quot; &#x2F;&gt;        &lt;meta name&#x3D;&quot;viewport&quot; con">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-03-08T05:56:23.000Z">
-<meta property="article:modified_time" content="2023-03-09T08:40:22.825Z">
+<meta property="article:published_time" content="2023-03-10T05:40:54.000Z">
+<meta property="article:modified_time" content="2023-03-10T08:34:21.780Z">
 <meta property="article:author" content="leetal hua">
-<meta property="article:tag" content="HTML">
 <meta property="article:tag" content="前端基础">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="leetal" type="application/atom+xml">
@@ -148,20 +148,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-HTML" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JS" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      HTML基础
+      JS基础
     </h1>
   
 
         
-        <a href="/2023/03/08/HTML/" class="archive-article-date">
-  	<time datetime="2023-03-08T05:56:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-08</time>
+        <a href="/2023/03/10/JS/" class="archive-article-date">
+  	<time datetime="2023-03-10T05:40:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-10</time>
 </a>
                 <!-- 需要添加的位置 -->
         <!-- 开始添加字数统计-->
@@ -181,477 +181,121 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="初识HTML"><a href="#初识HTML" class="headerlink" title="初识HTML"></a>初识HTML</h3><blockquote>
-<p>Hyper Text Markup Language,超文本标记语言,负责描述文档语义的语言,也就是web标准中的结构标准</p>
-</blockquote>
-<ul>
-<li>超文本:<ol>
-<li>图片、音频、视频、动画、多媒体等内容超出了文本的限制</li>
-<li>超级链接文本，与其他主机的文件进行连接</li>
-</ol>
-</li>
-<li>标记语言:<ol>
-<li>HTML的语法规范是一套标记标签,HTML标签的描述使得网页元素可以被浏览器解析呈现</li>
-<li>HTML没有编译过程而是由浏览器直接解析,不属于编程语言范畴</li>
-</ol>
-</li>
-</ul>
-<h3 id="HTML的专有名词"><a href="#HTML的专有名词" class="headerlink" title="HTML的专有名词"></a>HTML的专有名词</h3><span id="more"></span>
-
-<ul>
-<li>网页: 由标签组成的页面</li>
-<li>标签: 双标签与单标签,每个标签对应一个语义</li>
-<li>元素: 标签加上内容成为一个元素</li>
-<li>属性: 标签的辅助信息</li>
-<li>XHTML: 符合XML语法规范的HTML</li>
-<li>DHTML: dynamic,动态的,加入JS的HTML页面</li>
-<li>HTTP: 超文本传输协议,客户浏览器与服务端交互数据的格式规范</li>
-</ul>
-<h3 id="HTML的结构"><a href="#HTML的结构" class="headerlink" title="HTML的结构"></a>HTML的结构</h3><ol>
-<li>声明头<code>&lt;!DOCTYPE ...&gt;</code>：在HTML5中已经被简化为<code>&lt;!DOCTYPE html&gt;</code>,声明头曾用于告知浏览器文档使用的语法规范比如 <code>html:xt</code>表示XHTML translation,换言之HTML中已经没有XHTML了</li>
-<li>页面语言<code>lang</code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span> = <span class="string">&quot;en&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-指定页面语言类型</li>
+        <h2 id="JS引入方式与基本语法"><a href="#JS引入方式与基本语法" class="headerlink" title="JS引入方式与基本语法"></a>JS引入方式与基本语法</h2><h3 id="引入方式"><a href="#引入方式" class="headerlink" title="引入方式"></a>引入方式</h3><ol>
+<li>行内式(不建议)<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;这是什么,点一下&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;方式1&#x27;)&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li>en: 英语</li>
-<li>zh-CN: 中文</li>
-</ul>
-<ol start="3">
-<li>头标签head:<br>这是一个较完整html骨架<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;Author&quot;</span> <span class="attr">content</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;Keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;Description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-头标签内部常见的标签：</li>
-</ol>
-<ul>
-<li><code>&lt;title&gt;</code>: 整个网页的标题,在浏览器最上方显示<title>标题</title></li>
-<li><code>&lt;base&gt;</code>: 为页面上所有链接指定默认地址<code>&lt;base href=&quot;/&quot;&gt;</code></li>
-<li><code>&lt;meta&gt;</code>: 提供有关页面的基本信息</li>
-<li><code>&lt;body&gt;</code>: 主体标签,页面内容放在body标签内</li>
-<li><code>&lt;link&gt;</code>: 定义文档与外部资源关系<br><code>&lt;meta&gt;</code>标签常见的配置:</li>
-<li>字符集charset: <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=UTF-8&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-charset就是charac set(字符集),网页的编码方式</li>
-<li>视口viewport:<br><code>width=device-width</code>表示视口宽度等于屏幕宽度</li>
-<li>关键词Keywords:<br>关键词能够提高搜索命中率</li>
-<li>页面描述Description:<br>基于搜索引擎优化技术能够显示Description里的语句</li>
-</ul>
-<ol start="4">
-<li><code>&lt;body&gt;</code>标签<br><code>&lt;body&gt;</code>标签常见的属性:</li>
-</ol>
-<ul>
-<li>bgcolor: 设置整个网页的背景颜色</li>
-<li>background: 设置整个网页的背景图片</li>
-<li>text: 设置网页中的文本颜色</li>
-<li>leftmargin: 网页左边距</li>
-<li>topmargin: 网页上边距</li>
-<li>rightmargin: 网页右边距</li>
-<li>bottommargin: 网页下边距</li>
-</ul>
-<h2 id="HTML排版标签"><a href="#HTML排版标签" class="headerlink" title="HTML排版标签"></a>HTML排版标签</h2><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><p><code>&lt;h1&gt;&lt;/h1&gt;</code>至<code>&lt;h6&gt;&lt;/h6&gt;</code>定义1号到6号标题,具有align属性,可选属性值:left,center,right</p>
-<h3 id="注释声明"><a href="#注释声明" class="headerlink" title="注释声明"></a>注释声明</h3><p><code>&lt;!--注释--&gt;</code></p>
-<h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h3><p><code>&lt;p&gt;&lt;/p&gt;</code>包裹文字可以将文本分段,同样具有align属性</p>
-<blockquote>
-<p>注意p,span,a,b,i,u,em等都为文本级标签,文本级标签里只能放文字,图片,表单。<br>容量级标签如div,h,li,dt,dd等可以放置任何元素。HTML标签集以此分类</p>
-</blockquote>
-<h3 id="水平线标签"><a href="#水平线标签" class="headerlink" title="水平线标签"></a>水平线标签</h3><p>水平分割线（horizontal rule)<code>&lt;hr&gt;</code>分隔文档为各个部分,可选属性</p>
-<ul>
-<li>align&#x3D;””: 设定线条位置为left,right,center</li>
-<li>size&#x3D;””: 以像素为单位设定粗细,一般为2</li>
-<li>width&#x3D;””: 以像素绝对值如”512”或者以相对值”100%”设置线条长度(若选择相对值则一般都为”100%”)</li>
-<li>color&#x3D;”#0000FF”: 设置线条颜色</li>
-<li>noshade: 有这个属性表示线条具有阴影或立体,无则为平面显示</li>
-</ul>
-<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><p><code>&lt;br&gt;</code>标签可以强制换行</p>
-<h3 id="lt-div-gt-lt-div-gt-与-lt-span-gt-lt-span-gt-标签"><a href="#lt-div-gt-lt-div-gt-与-lt-span-gt-lt-span-gt-标签" class="headerlink" title="&lt;div&gt;&lt;/div&gt;与&lt;span&gt;&lt;/span&gt;标签"></a><code>&lt;div&gt;&lt;/div&gt;</code>与<code>&lt;span&gt;&lt;/span&gt;</code>标签</h3><p>二者都为非常重要的标签,作用都为将标签中内容分隔为独立区块,区别在于<code>&lt;div&gt;</code>必须独占一行,<code>&lt;span&gt;</code>则不会换行<br>单独插入这两个标签并不会有任何效果,他们是专门用于CSS的标签</p>
-<blockquote>
-<p>div是容器级的标签而span是文本级的标签,后者不能放置p、h、ul、dl、ol、div</p>
-</blockquote>
-<h3 id="内容居中标签"><a href="#内容居中标签" class="headerlink" title="内容居中标签"></a>内容居中标签</h3><p><code>&lt;center&gt;&lt;/center&gt;</code>具有将包裹内容居中的作用,但不建议使用,可以用CSS实现</p>
-<h2 id="字体标签"><a href="#字体标签" class="headerlink" title="字体标签"></a>字体标签</h2><h3 id="转义字符表"><a href="#转义字符表" class="headerlink" title="转义字符表"></a>转义字符表</h3><table>
-<thead>
-<tr>
-<th align="center">特殊字符</th>
-<th align="center">描述</th>
-<th align="left">代码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">space</td>
-<td align="center">空格</td>
-<td align="left"><code>&amp;nbsp;</code></td>
-</tr>
-<tr>
-<td align="center">&lt;</td>
-<td align="center">小于</td>
-<td align="left"><code>&amp;lt;</code></td>
-</tr>
-<tr>
-<td align="center">&gt;</td>
-<td align="center">大于</td>
-<td align="left"><code>&amp;gt;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;</td>
-<td align="center">和</td>
-<td align="left"><code>&amp;amp;</code></td>
-</tr>
-<tr>
-<td align="center">￥</td>
-<td align="center">人民币</td>
-<td align="left"><code>&amp;yen;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;copy;</td>
-<td align="center">版权</td>
-<td align="left"><code>&amp;copy;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;reg;</td>
-<td align="center">注册商标</td>
-<td align="left"><code>&amp;reg;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;deg;</td>
-<td align="center">摄氏度</td>
-<td align="left"><code>&amp;deg;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;plusmn;</td>
-<td align="center">正负号</td>
-<td align="left"><code>&amp;plusmn</code></td>
-</tr>
-<tr>
-<td align="center">&amp;times;</td>
-<td align="center">乘号</td>
-<td align="left"><code>&amp;times</code></td>
-</tr>
-<tr>
-<td align="center">&amp;divide;</td>
-<td align="center">除号</td>
-<td align="left"><code>&amp;divide;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;sup2;</td>
-<td align="center">平方</td>
-<td align="left"><code>&amp;sup2;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;sup3;</td>
-<td align="center">立方</td>
-<td align="left"><code>&amp;sup3;</code></td>
-</tr>
-</tbody></table>
-<h3 id="下划线、删除线、斜体"><a href="#下划线、删除线、斜体" class="headerlink" title="下划线、删除线、斜体"></a>下划线、删除线、斜体</h3><ul>
-<li><code>&lt;u&gt;</code>: 下划线</li>
-<li><code>&lt;s&gt;</code>或<code>&lt;del&gt;</code>: 删除线</li>
-<li><code>&lt;i&gt;</code>或<code>&lt;em&gt;</code>: 斜体</li>
-</ul>
-<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><ul>
-<li><code>&lt;sup&gt;</code>: 上标</li>
-<li><code>&lt;sub&gt;</code>: 下标</li>
-</ul>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接:"></a>超链接:</h2><ol>
-<li>外部链接: 链接到外部文件<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><code>&lt;a&gt;</code>是文本级标签,代指anchor(锚)</li>
-<li>href: 超文本地址</li>
+<li>可将少量JS代码写在HTML标签的事件属性(on开头的属性中)</li>
+<li>HTML语法中属性值使用双引号,JS中建议用单引号</li>
 </ul>
 <ol start="2">
-<li>锚链接:常用于在页面不同位置跳转<br>首先要有一个锚点,使用name或id属性为锚点命名<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;name1&quot;</span>&gt;</span>锚点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">···</span><br><span class="line">···</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#name1&quot;</span>&gt;</span>回到顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--也可以跳转到其他页面锚点--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;target.html#name1&quot;</span>&gt;</span>跳转到target页面的name1锚点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>邮件链接s<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;mailto:xxx.@163.com&quot;</span>&gt;</span>点击会弹出outlook<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="超链接的属性"><a href="#超链接的属性" class="headerlink" title="超链接的属性"></a>超链接的属性</h3><ul>
-<li>href: 目标URL</li>
-<li>title: 鼠标悬停文本</li>
-<li>name: 设置锚点</li>
-<li>target: 用什么方式打开目标页面<ul>
-<li>_self: 在同一个网页中显示(默认值)</li>
-<li>_blank: 在新窗口打开</li>
-<li>_parent: 在父窗口打开</li>
-<li>_top: 在顶级窗口中显示</li>
-</ul>
-</li>
-</ul>
-<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><p>单标签<code>&lt;img src=&quot;&quot;/&gt;</code>表示一张图片,可选属性:</p>
-<ul>
-<li>src: 图源,使用相对路径或绝对路径,绝对路径包括从盘符开始的绝对路径和网络路径</li>
-<li>width: 宽度</li>
-<li>height: 长度</li>
-<li>alt: 当图片无法显示时的替代文本</li>
-<li>title: 鼠标悬停文本</li>
-<li>align: 图片与周围文字的相对位置<ul>
-<li>align&#x3D;””: 默认图片和文字底端对齐</li>
-<li>align&#x3D;”center”: 图片和文字水平方向居中对齐</li>
-<li>align&#x3D;”top”: 图片与文字顶端对齐</li>
-<li>align&#x3D;”left”: 图片与文字顶端对齐且居于文字左侧</li>
-<li>align&#x3D;”right”: 图片与文字顶端对齐且居于文字右侧<blockquote>
-<p>width与height属性在HTML5中都改为使用CSS像素,若要等比例缩放则只设置一个</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签:"></a>列表标签:</h2><ol>
-<li>无序列表 unsorted list<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 下面为嵌套用法 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3.1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>内嵌式(学习过程中建议使用)<span id="more"></span>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// 在这里写 js 代码</span></span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">alert</span>(<span class="string">&#x27;内嵌式&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;内嵌式&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li><code>&lt;ul&gt;</code>: 声明一个无序列表</li>
-<li><code>&lt;li&gt;</code>: list item 列表项<br>可选属性:</li>
-<li>type&#x3D;””: 索引样式<ul>
-<li>disc: 默认值,实心圆点</li>
-<li>square: 实心方点</li>
-<li>circle: 空心圆<br>嵌套关系: <code>&lt;ul&gt;</code>里只能放置<code>&lt;li&gt;</code>,而<code>&lt;li&gt;</code>是容器级标签,可以放置任何标签</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>有序列表 ordered list<br><code>&lt;ol&gt;</code>标签声明有序列表,用法和规则与<code>&lt;ul&gt;</code>没有区别<br>可选属性:</li>
-</ol>
-<ul>
-<li>type&#x3D;””: 索引样式<ul>
-<li>1: 默认值,阿拉伯数字</li>
-<li>A,a: 大小写英文字母</li>
-<li>I,i: 大小写罗马数字</li>
-</ul>
-</li>
+<li>在<code>&lt;body&gt;</code>标签中使用<code>&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>标签对可以内嵌多行JS代码</li>
 </ul>
 <ol start="3">
-<li>定义列表 definition list<br><code>&lt;dl&gt;</code>声明定义列表,没有属性,子元素:</li>
+<li>外链式(高内聚,低耦合)<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 外链式：引入外部的 js 文件：这个 utils.js 文件与当前的 html 文件，处于同一级目录 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;utils.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li><code>&lt;dt&gt;</code>: definition title 列表标题,这是定义列表必备标签</li>
-<li><code>&lt;dd&gt;</code>: definition description 列表项,可以没有列表项<blockquote>
-<p><code>&lt;dt&gt;、&lt;dd&gt;</code>只能被<code>&lt;dl&gt;</code>包裹,<code>&lt;dl&gt;</code>里也只能有<code>&lt;dt&gt;、&lt;dd&gt;</code><br><code>&lt;dt&gt;、&lt;dd&gt;</code>都是容器级标签,所以用什么列表标签是根据语义来决定,语义的本质就是结构</p>
+<li>外链式依然将代码放置于body中,可以与内嵌JS代码并列</li>
+<li>已经引入了外部JS文件的script标签不可以再写JS代码</li>
+</ul>
+<h3 id="关于代码位置"><a href="#关于代码位置" class="headerlink" title="关于代码位置"></a>关于代码位置</h3><blockquote>
+<p>不管用什么方式引入JS代码,JS代码的位置都在<code>&lt;body&gt;</code>中,并且位于被操作标签元素的后面,因为浏览器默认从上往下解析代码,位于被操作页面标签之前的JS代码没有任何作用<br>如果一定要将JS代码放在页面标签元素之前或者<code>&lt;head&gt;</code>标签中可以使用<code>window.onload</code>包裹JS代码</p>
 </blockquote>
-</li>
-</ul>
-<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>单元格r1,c1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>单元格r1,c2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>单元格r2,c1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>&lt;table&gt;</code>标签声明一个表格,html的表格是由行<code>&lt;tr&gt;</code>组成的,没有列的概念,行由单元格<code>&lt;td&gt;</code>组成</p>
-<h3 id="lt-table-gt-的属性"><a href="#lt-table-gt-的属性" class="headerlink" title="&lt;table&gt;的属性"></a><code>&lt;table&gt;</code>的属性</h3><ul>
-<li>border: 边框,单位为像素</li>
-<li>style&#x3D;”border-collapse:collapse;”: 合并单元格与表格边框线</li>
-<li>width: 宽度,像素</li>
-<li>height: 高度,像素</li>
-<li>bordercolor: 表格边框颜色</li>
-<li>align: 表格框架的水平对齐方式left、right、center</li>
-<li>cellpadding: 单元格内容到边的距离,默认为0,表示文字紧挨着单元格左边框线</li>
-<li>cellspacing: 单元格之间的外边距,像素</li>
-<li>bacolor&#x3D;”#808080”: 表格背景颜色</li>
-<li>background&#x3D;”路径”: 背景图片,优先级大于背景颜色</li>
-<li>bordercolorlight: 表格的上左边框,单元格右下边框的颜色</li>
-<li>bordercolordark: 表格右下边框,单元格上左边框的颜色</li>
-<li>dir: 公有属性,单元格内容排列方式<ul>
-<li>ltr: left to right,左到右</li>
-<li>rtl: right to left,右到左<br></li>
-</ul>
-</li>
-</ul>
-<h3 id="lt-tr-gt-的属性"><a href="#lt-tr-gt-的属性" class="headerlink" title="&lt;tr&gt;的属性"></a><code>&lt;tr&gt;</code>的属性</h3><ul>
-<li>dir: 公有属性,这一行单元格内容排列方式<ul>
-<li>ltr: left to right,左到右</li>
-<li>rtl: right to left,右到左</li>
-</ul>
-</li>
-<li>bgcolor: 这一行的背景颜色</li>
-<li>height: 这一行的行高</li>
-<li>align&#x3D;””: 行内容水平对齐 left、right、center</li>
-<li>valign&#x3D;””: 行内容垂直对齐 top、middle、bottom<br></li>
-</ul>
-<h3 id="lt-td-gt-的属性"><a href="#lt-td-gt-的属性" class="headerlink" title="&lt;td&gt;的属性"></a><code>&lt;td&gt;</code>的属性</h3><ul>
-<li>align: 单元格内容水平对齐 left、right、center</li>
-<li>valign: 内容垂直对齐 top、middle、bottoom</li>
-<li>width: 宽</li>
-<li>height: 高</li>
-<li>bgcolor: 单元格背景色</li>
-<li>background: 单元格背景图片</li>
-<li>colspan&#x3D;””: 水平合并。属性值为占据单元格数量</li>
-<li>rowspan&#x3D;””: 垂直合并。属性值为占据单元格数量<blockquote>
-<p>合并单元格要先删除被合并单元格才能实现</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="其他表格标签"><a href="#其他表格标签" class="headerlink" title="其他表格标签"></a>其他表格标签</h3><ul>
-<li><code>&lt;th&gt;</code>: 表示加粗单元格</li>
-<li><code>&lt;caption&gt;</code>: 表示表格标题,使用时与<code>&lt;tr&gt;</code>标签同级<br><code>&lt;caption&gt;</code>有align属性 可以设置 left、right、center、top、bottom</li>
-<li><code>&lt;thead&gt;、&lt;tbody&gt;、&lt;tfoot&gt;</code>: 使用时包裹<code>&lt;tr&gt;</code>标签,当表格内容非常多可以使用,浏览器不需要解析所有数据再显示表格而可以逐级解析显示</li>
-</ul>
-<h2 id="框架标签"><a href="#框架标签" class="headerlink" title="框架标签"></a>框架标签</h2><p>框架标签用于实现内嵌的多个子页面(其中<code>&lt;frameset&gt;</code>和<code>&lt;frame&gt;</code>已经从web标准删除,建议使用<code>&lt;iframe&gt;</code>)</p>
-<blockquote>
-<p>框架标签中<code>&lt;frameset&gt;</code>和<code>&lt;frame&gt;</code>不能放在<code>&lt;body&gt;</code>里,因为<code>&lt;body&gt;</code>代表一个独立页面,所以要使用<code>&lt;frameset&gt;</code>就只能删除<code>&lt;body&gt;</code>,而<code>&lt;iframe&gt;</code>作为内嵌框架是可以放置在<code>&lt;body&gt;</code>里的</p>
-</blockquote>
-<h3 id="框架的集合"><a href="#框架的集合" class="headerlink" title="框架的集合"></a>框架的集合</h3><p><code>&lt;frameset&gt;</code>表示框架集合,可以包含多个框架或框架的集合<br>属性:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  window.onload = function()&#123;</span><br><span class="line">    // 这里可以写操作界面元素的JS代码，等页面加载完毕后再执行</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>window.onload</code>包裹的代码会在页面所有内容加载完毕后执行,也可以根据需要写在<code>&lt;script&gt;</code>标签中</p>
+<h3 id="基本语法规则"><a href="#基本语法规则" class="headerlink" title="基本语法规则"></a>基本语法规则</h3><ol>
+<li>JS的每一条语句以分号结尾,对缩进没有要求</li>
+<li>严格区分大小写</li>
+<li>注释(与C语言注释规则一样)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单行注释</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="输出语句"><a href="#输出语句" class="headerlink" title="输出语句"></a>输出语句</h3><ol>
+<li>警告框<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;警告框&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+alert会在浏览器中产生一个弹窗</li>
+<li>确认框<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="title function_">confirm</span>(<span class="string">&#x27;是否确认操作&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+confirm会在浏览器中产生一个带确认&#x2F;取消按钮的弹窗</li>
+<li>对话框<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> a = <span class="title function_">prompt</span>(<span class="string">&#x27;请输入&#x27;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+这行代码的作用是将输入在弹出对话框的内容传递给a后在控制台打印(prompt会返回输入)</li>
+<li>网页内容区域输出<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;···&#x27;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+<li>控制台输出<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;···&#x27;</span>);<span class="comment">// 普通打印</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">warn</span>(<span class="string">&#x27;···&#x27;</span>);<span class="comment">// 警告打印</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;···&#x27;</span>);<span class="comment">// 错误打印</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+console可以设置不同的打印等级,调试程序时便于区分</li>
+</ol>
+<h3 id="常量和变量"><a href="#常量和变量" class="headerlink" title="常量和变量"></a>常量和变量</h3><p>JS实际开发中一般不直接使用常量(为了代码精简和便于维护),如果一个常量经常出现可以用一个变量来定义这个常量或者使用ES6中的const来自定义常量<br>变量:<br>不同于其他编程语言,JS中永远都用var来声明变量而不需要写出类型(ES6之前)<br>ES6标准下则可用const定义常量,let定义变量</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&#x27;leetal&#x27;</span>; <span class="comment">// 定义一个常量</span></span><br><span class="line"><span class="keyword">let</span> age = <span class="number">3</span>; <span class="comment">// 定义一个变量</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>rows: 水平分割为上下两部分<ul>
-<li>绝对值写法: rows&#x3D;”200,*”  含义为上框架占200个像素,下框架占剩余空间</li>
-<li>相对值写法: rows&#x3D;”30%,*”  含义为上框架占整体空间30%,下框架占剩余空间</li>
+<li>JS中的变量如果没有初始化存储的值必然是undefined</li>
+<li>JS中是允许有同名变量的,但一定要注意后定义的变量会覆盖之前的变量</li>
 </ul>
-</li>
-<li>cols: 垂直分割为左右两部分,语法规则与rows一样</li>
-</ul>
-<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p><code>&lt;frame&gt;</code>表示框架,一个框架显示一个页面<br>属性:</p>
-<ul>
-<li>scrolling&#x3D;”no”: 是否需要滚动条,默认值为true</li>
-<li>noresize: 固定框架的大小,默认情况下单个框架边界可以拖动</li>
-<li>bordercolor&#x3D;”#808080”: 定义框架边框颜色</li>
-<li>frameborder&#x3D;””: 取0隐藏框架线,取1显示框架线</li>
-<li>name: 框架名字</li>
-</ul>
-<h3 id="内嵌框架"><a href="#内嵌框架" class="headerlink" title="内嵌框架"></a>内嵌框架</h3><p><code>&lt;iframe&gt;</code>表示内嵌框架,是body的子标签<br>属性:</p>
-<ul>
-<li>src&#x3D;” “: 内嵌的页面地址</li>
-<li>width: 宽</li>
-<li>height: 高</li>
-<li>scorlling&#x3D;” “: 滚动条</li>
-<li>name&#x3D;” “: 窗口名称<blockquote>
-<p>利用<code>&lt;frame&gt;</code>或者<code>&lt;iframe&gt;</code>name属性与<code>&lt;a&gt;</code>的target属性可以实现框架中打开新的超链<br><br></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><p><code>&lt;form&gt;</code>表示表单标签,用于与服务器交互,让用户填写选择<br>属性:</p>
-<ul>
-<li>name: 名称,配合JS实现操作</li>
-<li>id: 同name</li>
-<li>action: 指定表单数据的处理程序,一般为PHP</li>
-<li>method: 表单数据提交方式<ul>
-<li>get方式: 将表单数据，以”name&#x3D;value”形式追加到action指定的处理程序的后面，两者间用”?”隔开，每一个表单的”name&#x3D;value”间用”&amp;”号隔开。 特点：只适合提交少量信息，并且不太安全(不要提交敏感数据)、提交的数据类型只限于ASCII字符。</li>
-<li>post方式: 将表单数据直接发送(隐藏)到action指定的处理程序。POST发送的数据不可见。Action指定的处理程序可以获取到表单数据。 特点：可以提交海量信息，相对来说安全一些，提交的数据格式是多样的(Word、Excel、rar、img)</li>
-<li>Enctype: 表单数据的编码方式(加密方式)<ul>
-<li>Application&#x2F;x-www-form-urlencoded：默认加密方式，除了上传文件之外的数据都可以</li>
-<li>Multipart&#x2F;form-data：上传附件时，必须使用这种编码方式。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<h3 id="变量的命名规则"><a href="#变量的命名规则" class="headerlink" title="变量的命名规则"></a>变量的命名规则</h3><p>JS的命名规则与java类似<br>但比较特殊的是JS中除了关键字还有保留字<br>关键字:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>、<span class="keyword">else</span>、switch、<span class="built_in">break</span>、<span class="keyword">case</span>、default、<span class="keyword">for</span>、<span class="keyword">in</span>、<span class="keyword">do</span>、<span class="keyword">while</span>、</span><br><span class="line"></span><br><span class="line">var、<span class="built_in">let</span>、const、void、<span class="keyword">function</span>、<span class="built_in">continue</span>、<span class="built_in">return</span>、</span><br><span class="line"></span><br><span class="line">try、catch、finally、throw、debugger、</span><br><span class="line"></span><br><span class="line">this、typeof、instanceof、delete、with、</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span>、new、class、extends、super、with、yield、import、static、</span><br><span class="line"></span><br><span class="line"><span class="literal">true</span>、<span class="literal">false</span>、null、undefined、NaN</span><br></pre></td></tr></table></figure>
+<p>保留字:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">enum、await</span><br><span class="line"></span><br><span class="line">abstract、boolean、byte、char、double、final、<span class="built_in">float</span>、goto、int、long、native、short、synchronized、transient、volatile、</span><br><span class="line"></span><br><span class="line">arguments <span class="built_in">eval</span> Infinity</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下关键字只在严格模式中被当成保留字，在ES6中是属于关键字</span></span><br><span class="line">implements、interface、package、private、protected、public</span><br></pre></td></tr></table></figure>
+<p>所谓保留字是虽然现在还不是关键字但以后可能成为关键字,具体情况非常复杂,总之都不要用于标识符</p>
 <br>
 
-<h3 id="输入标签"><a href="#输入标签" class="headerlink" title="输入标签"></a>输入标签</h3><p><code>&lt;input&gt;</code> 表示一个输入文本框<br>属性:</p>
+<h3 id="变量的数据类型"><a href="#变量的数据类型" class="headerlink" title="变量的数据类型"></a>变量的数据类型</h3><p>JS是弱类型语言或者说是动态语言,具体表现在变量定义并不需要声明类型而是程序运行时自动确定,这代表以下操作是可以实现的</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">&#x27;leetal&#x27;</span>;</span><br><span class="line">name = <span class="number">123</span>;<span class="comment">//强制修改了name的变量类型</span></span><br></pre></td></tr></table></figure>
+<p>JS中总共只有8种数据类型:</p>
 <ul>
-<li>type&#x3D;” “:文本类型,可选<ul>
-<li>text: 默认</li>
-<li>password: 密码</li>
-<li>radio: 单选按钮,与老式收音机按钮同理,两个名字(name)相同的按钮按下一个另一个就不能按,所以叫radio</li>
-<li>checkbox: 多选按钮,name属性相同的一组按钮作为多选组</li>
-<li>button: 普通按钮,结合JS使用</li>
-<li>submit: 提交按钮,传送当前表单的数据给服务器或其他程序处理。这个按钮不需要写value自动就会有“提交”文字。点击按钮后，这个表单就会被提交到form标签的action属性中指定的那个页面中去</li>
-<li>reset: 重置按钮,清空表单内容</li>
-<li>image: 图片按钮,具有提交按钮的功能而且可以显示图片</li>
-<li>file: 文件选择框。 提示：如果要限制上传文件的类型，需要配合JS来实现验证。对上传文件的安全检查：一是扩展名的检查，二是文件数据内容的检查</li>
-<li>hideen: 隐藏框,包含不希望用户看见的信息</li>
+<li>基本数据类型(值类型):字符串String、数值Number、大型数值BigInt、布尔Boolean、空值null、未定义undefined、唯一值Symbol</li>
+<li>引用数据类型: 对象Object</li>
 </ul>
-</li>
-<li>checked: 将这个按钮默认置为选中状态</li>
-<li>value&#x3D;””: 文本框默认显示内容</li>
-<li>size&#x3D;”” : 限定文本框最多可显示多少字符</li>
-<li>readonly: 设置文本框为只读</li>
-<li>disabled: 同readonly</li>
-</ul>
-<h3 id="多行文本输入本框"><a href="#多行文本输入本框" class="headerlink" title="多行文本输入本框"></a>多行文本输入本框</h3><p><code>&lt;textarea&gt;</code></p>
-<h3 id="下拉列表标签"><a href="#下拉列表标签" class="headerlink" title="下拉列表标签"></a>下拉列表标签</h3><p><code>&lt;select&gt;&lt;/select&gt;</code>选择包裹<code>&lt;optioon&gt;</code>  表示下拉列表<br><code>&lt;option&gt;&lt;/option&gt;</code>包裹选项<br><code>&lt;select&gt;</code>属性:</p>
-<ul>
-<li>multiple: 允许对下拉列表中选项进行多选</li>
-<li>size&#x3D;””: 属性值默认为1即下拉视图, 如果属性值大于1则列表项为滚动视图<br><code>&lt;option&gt;</code>标签属性:</li>
-<li>selected: 预选;</li>
-</ul>
-<h3 id="多行输入文本框"><a href="#多行输入文本框" class="headerlink" title="多行输入文本框"></a>多行输入文本框</h3><p><code>&lt;textarea&gt;</code>表示一个多行文本输入框即”文本区域”</p>
-<ul>
-<li>rows&#x3D;””: 定义文本行数</li>
-<li>cols&#x3D;””: 定义文本列数</li>
-<li>readonly: 只读<blockquote>
-<p>文本框内的文本是对换行与空格等格式敏感的</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="lt-label-gt-标签"><a href="#lt-label-gt-标签" class="headerlink" title="&lt;label&gt;标签"></a><code>&lt;label&gt;</code>标签</h3><p>label的作用在于将input与文字绑定为一个整体</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">id</span>=<span class="string">&quot;man&quot;</span>/&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;man&quot;</span>&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">id</span>=<span class="string">&quot;woman&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;woman&quot;</span>&gt;</span>女<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>以上代码就将性别单选组与文字绑定,效果为单击文字”男”女”也能触发按钮</p>
 <blockquote>
-<p>任何表单元素都有label</p>
+<p>Object类型包括内置对象Function、Array、Date、RegExp、Error等,换言之除了值类型之外所有数据类型都是Object.</p>
 </blockquote>
-<h3 id="滚动字幕标签"><a href="#滚动字幕标签" class="headerlink" title="滚动字幕标签"></a>滚动字幕标签</h3><p><code>&lt;marquee&gt;</code>标签包裹的内容会像弹幕一样自动移动<br>属性:</p>
+<h3 id="栈内存和堆内存"><a href="#栈内存和堆内存" class="headerlink" title="栈内存和堆内存"></a>栈内存和堆内存</h3><p>首先,JS中所有变量都保存栈内存中(谨记)<br>基本数据类型保存在栈内存里,值与值之间独立存在,修改一个变量不会影响其他的变量<br>引用数据类型保存在堆内存里变量保存了对象的内存地址(引用),如果两个变量指向同一个对象,他们之间会互相影响。</p>
+<h3 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String 字符串"></a>String 字符串</h3><p>字符串是单引号或双引号包裹的任意文本<br>注意: 同类引号是不能嵌套的,但单引号可以嵌套双引号,反之也合法<br>转义字符表:</p>
 <ul>
-<li>direction&#x3D;””: 向什么方向移动 left、right、up、down</li>
-<li>behavior&#x3D;””: 行为方式<ul>
-<li>slide: 只移动一次</li>
-<li>scroll: 默认值,循环移动</li>
-<li>alternate: 循环移动,但下次滚动会反向</li>
+<li><code>\&quot;</code>: 双引号</li>
+<li><code>\&#39;</code>: 单引号</li>
+<li><code>\\</code>: 表示斜杠</li>
+<li><code>\r</code>: 表示回车</li>
+<li><code>\n</code>: 表示换行new line</li>
+<li><code>\t</code>: 表示缩进tab</li>
+<li><code>\b</code>: 表示空格blank</li>
 </ul>
-</li>
-<li>scrollamount&#x3D;””: 移动的速度</li>
-<li>loop&#x3D;””: 循环多少圈, 负值表示无限循环</li>
-<li>scrolldelay&#x3D;””: 移动一次休息多长时间,单位为毫秒 <br></li>
-</ul>
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><h3 id="更语义化的标签"><a href="#更语义化的标签" class="headerlink" title="更语义化的标签"></a>更语义化的标签</h3><ul>
-<li><code>&lt;section&gt;</code>表示区块</li>
-<li><code>&lt;article&gt;</code>表示文章</li>
-<li><code>&lt;header&gt;</code>表示页眉</li>
-<li><code>&lt;footer&gt;</code>表示页脚</li>
-<li><code>&lt;nav&gt;</code>表示导航</li>
-<li><code>&lt;aside&gt;</code>表示侧边栏</li>
-<li><code>&lt;figure&gt;</code>表示媒介内容分组</li>
-<li><code>&lt;mark&gt;</code>表示标记</li>
-<li><code>&lt;progress&gt;</code>表示进度</li>
-<li><code>&lt;time&gt;</code>表示日期<br>在此基础上,传统的<code>&lt;div&gt;</code>+CSS布局变得更加简洁<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 头部 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;nav&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 主体部分 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 文章 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">article</span>&gt;</span><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aside</span>&gt;</span><span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 底部 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="H5中新增的表单input-type属性"><a href="#H5中新增的表单input-type属性" class="headerlink" title="H5中新增的表单input type属性"></a>H5中新增的表单input type属性</h3><ul>
-<li>email 只能输入email 具备自动验证功能</li>
-<li>tel 手机号码</li>
-<li>url 只能输入url</li>
-<li>number 只能输入数字</li>
-<li>search 搜索框</li>
-<li>range 滑动条</li>
-<li>color 拾色器</li>
-<li>time 时间</li>
-<li>date 日期</li>
-<li>datetime 时间日期</li>
-<li>month 月份</li>
-<li>week 星期<br>新增的form元素<br><code>&lt;fieldset&gt;</code>: 将一众<code>&lt;input&gt;</code>打包成一组<br><code>&lt;legend&gt;</code>: 为fieldset里的元素定义标题<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">legend</span>&gt;</span>表单类型<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">            email: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">            color: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;color&quot;</span> <span class="attr">name</span>=<span class="string">&quot;color&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">            url: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;url&quot;</span> <span class="attr">name</span>=<span class="string">&#x27;url&#x27;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">            number: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">step</span>=<span class="string">&quot;3&quot;</span> <span class="attr">name</span>=<span class="string">&quot;number&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="新增的表单元素"><a href="#新增的表单元素" class="headerlink" title="新增的表单元素"></a>新增的表单元素</h3><ul>
-<li><code>&lt;datalist&gt;</code>: 数据列表<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">imput</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">list</span>=<span class="string">&quot;demo&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;demo&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>备选1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>备选2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datelist</span>&gt;</span></span><br></pre></td></tr></table></figure>
-数据列表可以根据输入的关键词自动匹配可能的输入,类似搜索框自动联想</li>
-<li><code>keygen</code>:   <blockquote>
-<p>keygen 提供一种验证用户的可靠方法。<br> keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键：一个公钥，一个私钥。<br> 私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）</p>
-</blockquote>
-</li>
-<li><code>&lt;meter&gt;</code> 度量器<br>属性:</li>
-<li>low&#x3D;””: 低于该值后警告</li>
-<li>high&#x3D;””: 高于该值后警告</li>
-<li>value&#x3D;””: 当前值</li>
-<li>max&#x3D;””: 最大值</li>
-<li>min&#x3D;””: 最小值</li>
-</ul>
-<h3 id="新增表单属性"><a href="#新增表单属性" class="headerlink" title="新增表单属性"></a>新增表单属性</h3><ul>
-<li>placeholder: 占位文字</li>
-<li>autofocus: 自动获取焦点</li>
-<li>multiple: 文件上传多选或选择多个邮箱地址</li>
-<li>autocomplete: 自动填充</li>
-<li>form: 指定表单项属于哪个form,处理复杂表单</li>
-<li>novalidate: 关闭默认验证功能(只能加给form)</li>
-<li>required: 表示必须填写后才能提交表单</li>
-<li>pattern: 自定义正则验证表单</li>
-</ul>
-<h3 id="表单事件"><a href="#表单事件" class="headerlink" title="表单事件"></a>表单事件</h3><ul>
-<li>oninput(): 输入内容时触发</li>
-<li>oninvalid(): 验证不通过时触发</li>
-</ul>
-<h3 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h3><p><code>&lt;audio&gt;</code>标签代表一个音频播放器<br>属性:</p>
+<h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><p>字符串+任意数据类型 &#x3D; 拼接的字符串<br>JS中的字符串也有.length属性用于获取长度</p>
+<h4 id="字符串的不可变性"><a href="#字符串的不可变性" class="headerlink" title="字符串的不可变性"></a>字符串的不可变性</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line">str = <span class="string">&#x27;leetal&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>这行代码中常量hello并不会被修改,它依然保存在内存中,唯一改变的只是str的指向</p>
+<h4 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h4><p>ES6的新特性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&#x27;leetal&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> age = <span class="string">&#x27;3&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;我是&#x27;</span> + name + <span class="string">&#x27;,age:&#x27;</span> + age); <span class="comment">//传统写法</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`我是<span class="subst">$&#123;name&#125;</span>,age:<span class="subst">$&#123;age&#125;</span>`</span>); <span class="comment">//ES6 写法，注意是反引号而不是单引号</span></span><br></pre></td></tr></table></figure>
+<p><font color="red"> 模板字符串的换行是会被实现的<br>模板字符串支持函数调用和嵌套<br></font></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> nameList = [<span class="string">&#x27;元素1&#x27;</span>, <span class="string">&#x27;元素2&#x27;</span>, <span class="string">&#x27;元素3&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">myTemplate</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// join(&#x27;&#x27;) 的意思是，把数组里的内容合并成一个字符串</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">`&lt;ul&gt;</span></span><br><span class="line"><span class="string">	<span class="subst">$&#123;nameList.map((item) =&gt; <span class="string">`&lt;li&gt;<span class="subst">$&#123;item&#125;</span>&lt;/li&gt;`</span>).join(<span class="string">&#x27;&#x27;</span>)&#125;</span></span></span><br><span class="line"><span class="string">	&lt;/ul&gt;`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">innerHTML</span> = <span class="title function_">myTemplate</span>();<span class="comment">//模板字符串加函数实现一个无序列表</span></span><br></pre></td></tr></table></figure>
+<h3 id="数值型-Nunber"><a href="#数值型-Nunber" class="headerlink" title="数值型 Nunber"></a>数值型 Nunber</h3><p>JS中整数、浮点数、小数不管大小正负都是Number(BigINT 是ES6新类型)<br>数值范围</p>
 <ul>
-<li>autoplay: 自动播放</li>
-<li>contorls: 控制条</li>
-<li>loop: 循环播放</li>
-<li>preload: 预加载（设置autoplay时此属性失效）<br>处理兼容性问题:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span> <span class="attr">loop</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;music/mp3.mp3&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;music/ogg.ogg&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;music/wav.wav&quot;</span>/&gt;</span></span><br><span class="line">    抱歉,你的浏览器不支持播放此音频</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 如果三种格式都不支持会自动显示这句话 --&gt;</span></span><br></pre></td></tr></table></figure>
-<code>&lt;video&gt;</code>标签表示一个视频播放器,视频播放器的属性相比音频播放器多了窗口宽与高的调整,其余属性一致,兼容性处理采用同样方法</li>
+<li>最大值: Number.MAX_VALUE,值为1.7976931348623157e+308</li>
+<li>最小值: Number.MIN_VALUE,值为5e-324<br>如果Number表示的值超出表示范围则会返回 Infinity或 -Infinity</li>
 </ul>
-<h3 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h3><h4 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h4><ul>
-<li>document.querySeclector(“selector”) 通过CSS选择器选择符合条件的第一个元素</li>
-<li>document.querySelectorAll(“selector”)通过CSS选择器获取符合条件所有元素,以类数组方式存储</li>
+<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4><p>即Not a Number<br>数值运算产生逻辑错误就会返回NaN(比如用非数字字符串除数字)</p>
+<ul>
+<li>Undefined和任何数值计算的结果都是NaN</li>
+<li>NaN和任何值不相等包括它自己</li>
 </ul>
-<h4 id="类名操作"><a href="#类名操作" class="headerlink" title="类名操作"></a>类名操作</h4><ul>
-<li>Node.classList.add(“class”) 添加class</li>
-<li>Node.classList.remove(“class”) 移除class</li>
-<li>Node.classList.toggle(“class”) 切换class,有则移除,无则添加</li>
-<li>Node.classList.contains(“class”) 检测是否存在class</li>
-</ul>
-<h4 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h4><p>H5可以直接在标签中添加自定义属性,但必须以<code>data-</code>开头</p>
+<h4 id="加号与连字符"><a href="#加号与连字符" class="headerlink" title="加号与连字符"></a>加号与连字符</h4><p>如果两边都是Number加号才代表数字相加,否则就是连字符</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&#x27;1&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a + b); </span><br></pre></td></tr></table></figure>
+<p>控制台输出12而不是3</p>
+<h4 id="隐式转换"><a href="#隐式转换" class="headerlink" title="隐式转换"></a>隐式转换</h4><p>不同于<code>+</code>,运算符<code>-</code>、<code>*</code>、<code>\</code>、<code>%</code>是会进行隐式转换的</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&#x27;4&#x27;</span>+<span class="number">1</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br></pre></td></tr></table></figure>
+<p>控制台输出 5</p>
+<h4 id="浮点数的运算"><a href="#浮点数的运算" class="headerlink" title="浮点数的运算"></a>浮点数的运算</h4><p>运算精度<br>与其他编程语言一样,JS的浮点数运算是会丢失精度的,简单的精度修正可以使用<code>toFix()</code>方法截断小数<br>实际开发时可以使用cdn或者npm导入针对数字运算的开源库Math.js(非常全面)或者decimal.js(足以应对大多数数字运算)</p>
+<h3 id="null与undefine区别"><a href="#null与undefine区别" class="headerlink" title="null与undefine区别"></a>null与undefine区别</h3><h4 id="null"><a href="#null" class="headerlink" title="null"></a>null</h4><p>null专门用于定义空对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="literal">null</span>;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
+<p>Null相当于是一个空对象,如果需要一个保存引用数据的对象但暂时不确定放什么就可以定义为null</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> myObj = <span class="literal">null</span>;</span><br><span class="line">cosole.<span class="title function_">log</span>(<span class="keyword">typeof</span> myObj);</span><br></pre></td></tr></table></figure>
+<p>控制台会返回object,这就是null最直观的作用</p>
+<h4 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h4><p>Undefined表示未定义类型<br>以下几种情况会出现Undefined</p>
+<ol>
+<li>一个变量声明之后没有赋值它的初始值就是Undefined</li>
+<li>一个变量没有声明直接使用会报错,如果此时typeof它的类型,会显示undefine</li>
+<li>一个函数没有返回值就相当于return Undefined</li>
+<li>调用带参函数时没有传递实参那么形参就是Undefined<br>针对第四种情况可以为形参设置一个默认值<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params">name = <span class="string">&#x27;leetal&#x27;</span></span>) &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">test</span>();</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="null和undefined关系"><a href="#null和undefined关系" class="headerlink" title="null和undefined关系"></a>null和undefined关系</h4><p>实际上undefined是由null衍生的<br>所以</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">null</span> == <span class="literal">undefined</span> <span class="comment">//true,值相等</span></span><br><span class="line"><span class="literal">null</span> === <span class="literal">undefined</span> <span class="comment">//false,数据类型不相等</span></span><br></pre></td></tr></table></figure>
+<p>具体表现为任何值和null运算时null可看作0而与undefined的运算结果都是NaN</p>
 
       
 
@@ -665,11 +309,11 @@ charset就是charac set(字符集),网页的编码方式</li>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
@@ -725,7 +369,7 @@ charset就是charac set(字符集),网页的编码方式</li>
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/03/08/HTML/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/03/10/JS/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -739,18 +383,9 @@ charset就是charac set(字符集),网页的编码方式</li>
   
 <nav id="article-nav">
   
-    <a href="/2023/03/10/JS/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS基础
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/03/07/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">学习路线</div>
+    <a href="/2023/03/08/HTML/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -777,7 +412,7 @@ charset就是charac set(字符集),网页的编码方式</li>
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E8%AF%86HTML"><span class="toc-number">1.</span> <span class="toc-text">初识HTML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E7%9A%84%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D"><span class="toc-number">2.</span> <span class="toc-text">HTML的专有名词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">3.</span> <span class="toc-text">HTML的结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%8E%92%E7%89%88%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">HTML排版标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E6%A0%87%E7%AD%BE"><span class="toc-number">1.</span> <span class="toc-text">标题标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%E5%A3%B0%E6%98%8E"><span class="toc-number">2.</span> <span class="toc-text">注释声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD%E6%A0%87%E7%AD%BE"><span class="toc-number">3.</span> <span class="toc-text">段落标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E7%BA%BF%E6%A0%87%E7%AD%BE"><span class="toc-number">4.</span> <span class="toc-text">水平线标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8D%A2%E8%A1%8C%E6%A0%87%E7%AD%BE"><span class="toc-number">5.</span> <span class="toc-text">换行标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-div-gt-lt-div-gt-%E4%B8%8E-lt-span-gt-lt-span-gt-%E6%A0%87%E7%AD%BE"><span class="toc-number">6.</span> <span class="toc-text">&lt;div&gt;&lt;&#x2F;div&gt;与&lt;span&gt;&lt;&#x2F;span&gt;标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%B1%85%E4%B8%AD%E6%A0%87%E7%AD%BE"><span class="toc-number">7.</span> <span class="toc-text">内容居中标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">字体标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">转义字符表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF%E3%80%81%E5%88%A0%E9%99%A4%E7%BA%BF%E3%80%81%E6%96%9C%E4%BD%93"><span class="toc-number">2.</span> <span class="toc-text">下划线、删除线、斜体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E4%B8%8B%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">上下标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number"></span> <span class="toc-text">超链接:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">超链接的属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">图片标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">列表标签:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">表格标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-table-gt-%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">&lt;table&gt;的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-tr-gt-%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">2.</span> <span class="toc-text">&lt;tr&gt;的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-td-gt-%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text">&lt;td&gt;的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE"><span class="toc-number">4.</span> <span class="toc-text">其他表格标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">框架标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E7%9A%84%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text">框架的集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6"><span class="toc-number">2.</span> <span class="toc-text">框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%B5%8C%E6%A1%86%E6%9E%B6"><span class="toc-number">3.</span> <span class="toc-text">内嵌框架</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE"><span class="toc-number"></span> <span class="toc-text">表单标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%87%E7%AD%BE"><span class="toc-number">1.</span> <span class="toc-text">输入标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E8%BE%93%E5%85%A5%E6%9C%AC%E6%A1%86"><span class="toc-number">2.</span> <span class="toc-text">多行文本输入本框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE"><span class="toc-number">3.</span> <span class="toc-text">下拉列表标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E8%BE%93%E5%85%A5%E6%96%87%E6%9C%AC%E6%A1%86"><span class="toc-number">4.</span> <span class="toc-text">多行输入文本框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-label-gt-%E6%A0%87%E7%AD%BE"><span class="toc-number">5.</span> <span class="toc-text">&lt;label&gt;标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%9A%E5%8A%A8%E5%AD%97%E5%B9%95%E6%A0%87%E7%AD%BE"><span class="toc-number">6.</span> <span class="toc-text">滚动字幕标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML5"><span class="toc-number"></span> <span class="toc-text">HTML5</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E6%A0%87%E7%AD%BE"><span class="toc-number">1.</span> <span class="toc-text">更语义化的标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H5%E4%B8%AD%E6%96%B0%E5%A2%9E%E7%9A%84%E8%A1%A8%E5%8D%95input-type%E5%B1%9E%E6%80%A7"><span class="toc-number">2.</span> <span class="toc-text">H5中新增的表单input type属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E7%9A%84%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">新增的表单元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">新增表单属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">表单事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93"><span class="toc-number">6.</span> <span class="toc-text">多媒体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM%E6%93%8D%E4%BD%9C"><span class="toc-number">7.</span> <span class="toc-text">DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0"><span class="toc-number">7.1.</span> <span class="toc-text">获取元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B1%BB%E5%90%8D%E6%93%8D%E4%BD%9C"><span class="toc-number">7.2.</span> <span class="toc-text">类名操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7"><span class="toc-number">7.3.</span> <span class="toc-text">自定义属性</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">JS引入方式与基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">引入方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">关于代码位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="toc-number">1.3.</span> <span class="toc-text">基本语法规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.4.</span> <span class="toc-text">输出语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F"><span class="toc-number">1.5.</span> <span class="toc-text">常量和变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">1.6.</span> <span class="toc-text">变量的命名规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.7.</span> <span class="toc-text">变量的数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%88%E5%86%85%E5%AD%98%E5%92%8C%E5%A0%86%E5%86%85%E5%AD%98"><span class="toc-number">1.8.</span> <span class="toc-text">栈内存和堆内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.9.</span> <span class="toc-text">String 字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5"><span class="toc-number">1.9.1.</span> <span class="toc-text">字符串拼接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7"><span class="toc-number">1.9.2.</span> <span class="toc-text">字符串的不可变性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.9.3.</span> <span class="toc-text">模板字符串</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E5%9E%8B-Nunber"><span class="toc-number">1.10.</span> <span class="toc-text">数值型 Nunber</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#NaN"><span class="toc-number">1.10.1.</span> <span class="toc-text">NaN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A0%E5%8F%B7%E4%B8%8E%E8%BF%9E%E5%AD%97%E7%AC%A6"><span class="toc-number">1.10.2.</span> <span class="toc-text">加号与连字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.10.3.</span> <span class="toc-text">隐式转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-number">1.10.4.</span> <span class="toc-text">浮点数的运算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null%E4%B8%8Eundefine%E5%8C%BA%E5%88%AB"><span class="toc-number">1.11.</span> <span class="toc-text">null与undefine区别</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.11.1.</span> <span class="toc-text">null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Undefined"><span class="toc-number">1.11.2.</span> <span class="toc-text">Undefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null%E5%92%8Cundefined%E5%85%B3%E7%B3%BB"><span class="toc-number">1.11.3.</span> <span class="toc-text">null和undefined关系</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
