@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: Github | leetal</title>
+  <title>react | leetal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="leetal">
-<meta property="og:url" content="http://example.com/tags/Github/index.html">
+  <meta name="description" content="recat特点 组件化模式,声明式代码,提高开发效率与组件复用率 在react native中可以进行移动端开发 使用虚拟dom＋diff算法减少与真实dom的交互  JSX 概念: react定义的一种类似于XML的JS扩展语法: XML+JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react">
+<meta property="og:url" content="http://example.com/2023/03/13/react/index.html">
 <meta property="og:site_name" content="leetal">
+<meta property="og:description" content="recat特点 组件化模式,声明式代码,提高开发效率与组件复用率 在react native中可以进行移动端开发 使用虚拟dom＋diff算法减少与真实dom的交互  JSX 概念: react定义的一种类似于XML的JS扩展语法: XML+JS">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-13T03:43:27.000Z">
+<meta property="article:modified_time" content="2023-03-13T12:47:32.848Z">
 <meta property="article:author" content="leetal hua">
+<meta property="article:tag" content="前端基础">
+<meta property="article:tag" content="react基础">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="leetal" type="application/atom+xml">
@@ -142,64 +148,219 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-react" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/03/06/Git%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2023-03-06T07:11:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/03/06/Git%E4%BD%BF%E7%94%A8/">Git使用</a>
+    <h1 class="article-title" itemprop="name">
+      react
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2023/03/13/react/" class="archive-article-date">
+  	<time datetime="2023-03-13T03:43:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-13</time>
+</a>
+                <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+        <!-- 添加完成 -->
+
+        
+        
+            <!-- 添加代码 -->
+        
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+      
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="recat特点"><a href="#recat特点" class="headerlink" title="recat特点"></a>recat特点</h2><ol>
+<li>组件化模式,声明式代码,提高开发效率与组件复用率</li>
+<li>在react native中可以进行移动端开发</li>
+<li>使用虚拟dom＋diff算法减少与真实dom的交互</li>
+</ol>
+<h2 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h2><blockquote>
+<p>概念: react定义的一种类似于XML的JS扩展语法: XML+JS</p>
+</blockquote>
+<span id="more"></span>
+<ol start="4">
+<li>作用: 用来创建react虚拟DOM对象<br>它不是字符串,也不是标签,但最终产生的就是一个JS对象</li>
+<li>标签名和标签属性都任意</li>
+<li>基本语法规则:</li>
+</ol>
+<ul>
+<li>遇到&lt;开头的代码以标签的语法解析,html同名标签转换为html同名元素,其他标签需要特别解析</li>
+<li>遇到以{开头的代码,以JS语法解析,标签中的JS代码必须用{}包含</li>
+</ul>
+<ol start="7">
+<li>babel.js的作用</li>
+</ol>
+<ul>
+<li>浏览器不能直接解析JSX代码,需要babel将JSX转译为纯JS代码</li>
+<li>在<code>script</code>标签中声明<code>text/babel</code>,表示使用babel转译</li>
+</ul>
+<h3 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h3><p>React提供了创建简单虚拟DOM对象的API</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> element = <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;h1&#x27;</span>, &#123;<span class="attr">id</span>:<span class="string">&#x27;myId&#x27;</span>&#125;, <span class="string">&#x27;hello&#x27;</span>); <span class="comment">//创建一级标题虚拟DOM</span></span><br></pre></td></tr></table></figure>
+<p>渲染虚拟DOM</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(virtualDOM,cotainterDOM);</span><br></pre></td></tr></table></figure>
+<p>虚拟DOM在渲染时就会成为真实DOM<br>真实DOM有非常多的元素,并且更新时页面就会重绘<br>虚拟DOM只在渲染时重绘</p>
+<h2 id="模块与组件"><a href="#模块与组件" class="headerlink" title="模块与组件"></a>模块与组件</h2><ul>
+<li>模块: 向外提供特定功能的JS文件</li>
+<li>组件: 用来实现特定功能效果的代码合集(html&#x2F;css&#x2F;js)</li>
+</ul>
+<h3 id="面向组件编程"><a href="#面向组件编程" class="headerlink" title="面向组件编程"></a>面向组件编程</h3><p>react支持自定义标签后渲染组件标签</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">function</span> <span class="title function_">MyComponent</span>(<span class="params"></span>)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>工厂函数组件<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">MyComponent</span> /&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;test1&#x27;</span>)) <span class="comment">//定义与渲染工厂组件(简单组件)</span></span><br></pre></td></tr></table></figure>
+<p>自定义标签名大写作为函数标识符,引入ES6的类之后可以定义复杂标签</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyComponent2</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span>&#123;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>类组件<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">MyComponent2</span> /&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;test2&#x27;</span>))</span><br></pre></td></tr></table></figure>
+<p>继承自Component的类可以重写render()方法来返回一个DOM<br>效率上工厂组件要大于类组件</p>
+<h4 id="states"><a href="#states" class="headerlink" title="states"></a>states</h4><p>状态,组件自带的重要属性<br>有定义状态的需求则使用类组件</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Right</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span>&#123;</span><br><span class="line">      </span><br><span class="line">      <span class="title function_">constructor</span>(<span class="params">props</span>)&#123;</span><br><span class="line">        <span class="variable language_">super</span>(props)</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">          <span class="attr">isTrue</span>: <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">       <span class="variable language_">this</span>.<span class="property">handleClick</span> = <span class="variable language_">this</span>.<span class="property">handleClick</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>)</span><br><span class="line">      &#125; <span class="comment">//固定格式初始化状态</span></span><br><span class="line">      <span class="title function_">handleClick</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;handleClick()&#x27;</span>, <span class="variable language_">this</span>)</span><br><span class="line">        <span class="keyword">const</span> isTrue = !<span class="variable language_">this</span>.<span class="property">state</span>.<span class="property">isTrue</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123;isTrue&#125;)</span><br><span class="line">      &#125; <span class="comment">// 非继承的方法中的this默认是undefined</span></span><br><span class="line">      <span class="title function_">render</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">const</span> &#123;isTrue&#125; = <span class="variable language_">this</span>.<span class="property">state</span></span><br><span class="line">        <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleClick&#125;</span>&gt;</span>&#123;isTrue? &#x27;对的&#x27; : &#x27;不对&#x27;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">      &#125; <span class="comment">// 通过状态实现功能</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="props"><a href="#props" class="headerlink" title="props"></a>props</h4><p>props可以指代输入的对象以此来提高代码复用率</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params">props</span>)&#123;</span><br><span class="line">      <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>姓名: &#123;props.name&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>年龄: &#123;props.age&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">li</span>&gt;</span>性别: &#123;props.sex&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line">      )</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title class_">Person</span>.<span class="property">defaultProps</span>=&#123;</span><br><span class="line">      <span class="attr">sex</span>: <span class="string">&#x27;none&#x27;</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;none&#x27;</span>,</span><br><span class="line">      <span class="attr">age</span>: <span class="string">&#x27;none&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">const</span> p1 = &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;111&#x27;</span>,</span><br><span class="line">      <span class="attr">age</span>: <span class="number">3</span>,</span><br><span class="line">      <span class="attr">sex</span>: <span class="string">&#x27;nan&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="language-xml"><span class="tag">&lt;<span class="name">Person</span> <span class="attr">name</span>=<span class="string">&#123;p1.name&#125;</span> <span class="attr">age</span>=<span class="string">&#123;p1.age&#125;</span> <span class="attr">sex</span>=<span class="string">&#123;p1.sex&#125;/</span>&gt;</span></span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;test1&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">react基础</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/03/13/react/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2023/03/10/JS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#recat%E7%89%B9%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">recat特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JSX"><span class="toc-number">2.</span> <span class="toc-text">JSX</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E6%8B%9FDOM"><span class="toc-number">2.1.</span> <span class="toc-text">虚拟DOM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E4%B8%8E%E7%BB%84%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">模块与组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">面向组件编程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#states"><span class="toc-number">3.1.1.</span> <span class="toc-text">states</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-number">3.1.2.</span> <span class="toc-text">props</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -223,9 +384,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
